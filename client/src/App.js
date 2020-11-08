@@ -11,6 +11,7 @@ import View from "./components/View";
 
 import { PrivateRoute } from "./PrivateRoute";
 import Landing from "./components/Landing";
+import Home from "./components/Home";
 
 export default class App extends Component {
   check = () => {
@@ -23,7 +24,7 @@ export default class App extends Component {
     return (
       <Router>
         <>
-          <Route exact path="/" component={Landing} />
+          <Route exact path="/" component={Home} />
           <Route
             exact
             path="/login"
